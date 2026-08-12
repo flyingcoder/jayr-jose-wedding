@@ -7,11 +7,15 @@ Presents the couple's names, wedding date, and venue as the first impression for
 ## Requirements
 
 ### Requirement: Display couple names and date
-The system SHALL display the couple's full names ("Adriel II J. Gran" and "Josephine C. Bernales") and the wedding date ("Sunday, August 30, 2026") in the hero section, visible without scrolling on a mobile viewport (≤480px width).
+The system SHALL display the couple's first names ("Adriel" and "Josephine") and the wedding date ("Sunday, August 30, 2026") in the hero section, visible without scrolling on a mobile viewport (≤480px width). The couple's full legal names ("Adriel II J. Gran" and "Josephine C. Bernales") SHALL remain available to assistive technology and search indexing via an accessible name on the heading.
 
 #### Scenario: Hero renders on load
 - **WHEN** a visitor loads the site on a mobile-width viewport
-- **THEN** the couple's names and wedding date are visible within the initial viewport without scrolling
+- **THEN** the couple's first names and wedding date are visible within the initial viewport without scrolling
+
+#### Scenario: Full names available to assistive technology
+- **WHEN** a screen reader announces the hero heading
+- **THEN** it announces the couple's full legal names, not just their first names
 
 ### Requirement: Venue teaser
 The hero section SHALL include a short venue teaser (venue name and city) that visually points toward the full Event Details section below.
