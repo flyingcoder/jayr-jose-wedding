@@ -6,11 +6,11 @@ export const entourageGroups = [
     subsections: [
       {
         heading: 'Together with our loving parents',
-        members: ['Mr. Adriel B. Gran', 'Mrs. Janette J. Gran', 'Olivia V. Cordero'],
+        members: ['Mr. Adriel B. Gran', 'Mrs. Janette J. Gran', 'Olivia C. Bernales'],
       },
       {
         heading: 'Officiating Minister',
-        members: ['Bishop Albert Boyonas Gran'],
+        members: ['Bishop (Atty.) Adriel Boyonas Gran'],
       },
     ],
   },
@@ -62,7 +62,7 @@ export const entourageGroups = [
       { heading: 'Bible Bearer', members: ['Ichiji Pacot'] },
       { heading: 'Candle', members: ['Mark Francis Bañares', 'Keethe Justine Q. Bañares'] },
       { heading: 'Veil', members: ['Alvin E. Pacot', 'Senica Rose T. Pacot'] },
-      { heading: 'Cord', members: ['Rinkart Martin C. Quinal & Jessah Rose P. Quinal'] },
+      { heading: 'Cord', members: ['Rinkart Martin C. Quinal', 'Jessah Rose P. Quinal'] },
     ],
   },
   {
@@ -88,10 +88,10 @@ export const entourageGroups = [
           'Mr. Johnny Miparanum & Mrs. Jessiel Miparanum',
           'Mr. Reno Nuay & Mrs. Delia Sausa',
           'Mr. Yashier Sappayani & Mrs. Vanessa Joy Sappayani',
-          'Mr. Ricky Taboac & Mrs. Gemma Taboac',
+          'Engr. Ricky Taboac & Mrs. Gemma Taboac',
           'Mr. Roneto Lara & Mrs. Evelyn Lara',
           'Mr. Jo-nel Falcasanots & Mrs. Marissa Bañas',
-          'Mr. Eliezer Sab-a & Mrs. Nida Sab-a',
+          'Mr. Elieser Sab-a & Mrs. Nida Sab-a',
           'Ptr. Rey Yamedo & Kgwd. Levie Yamedo',
           'Mr. Elmer Maraon & Mrs. Hope Maraon',
           'Mr. Ryan Jimenez & Mrs. Marilou Zaragoza',
