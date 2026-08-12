@@ -26,6 +26,24 @@
 </head>
 <body>
   <header class="hero">
+    <svg class="hero__bloom hero__bloom--tl" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+      <g class="hero__bloom-stems">
+        <path d="M8 92 C 14 68, 10 44, 26 18" />
+        <path d="M14 78 C 24 74, 30 64, 28 52" />
+        <path d="M10 58 C 20 56, 26 48, 24 38" />
+      </g>
+      <g class="hero__bloom-leaves">
+        <ellipse cx="24" cy="30" rx="10" ry="5" transform="rotate(-35 24 30)" />
+        <ellipse cx="18" cy="50" rx="9" ry="4.5" transform="rotate(20 18 50)" />
+        <ellipse cx="28" cy="66" rx="8" ry="4" transform="rotate(-15 28 66)" />
+      </g>
+      <g class="hero__bloom-petals">
+        <circle cx="30" cy="14" r="5" />
+        <circle cx="20" cy="10" r="4" />
+        <circle cx="12" cy="18" r="3.5" />
+      </g>
+    </svg>
+    <div class="hero__arch" aria-hidden="true"></div>
     <div class="hero__inner">
       <p class="hero__eyebrow">You're Invited</p>
       <h1 class="hero__names">
@@ -36,33 +54,52 @@
       <p class="hero__date">Sunday, August 30, 2026</p>
       <p class="hero__venue">Paseo de Santiago, Iligan City</p>
     </div>
+    <svg class="hero__bloom hero__bloom--br" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+      <g class="hero__bloom-stems">
+        <path d="M8 92 C 14 68, 10 44, 26 18" />
+        <path d="M14 78 C 24 74, 30 64, 28 52" />
+        <path d="M10 58 C 20 56, 26 48, 24 38" />
+      </g>
+      <g class="hero__bloom-leaves">
+        <ellipse cx="24" cy="30" rx="10" ry="5" transform="rotate(-35 24 30)" />
+        <ellipse cx="18" cy="50" rx="9" ry="4.5" transform="rotate(20 18 50)" />
+        <ellipse cx="28" cy="66" rx="8" ry="4" transform="rotate(-15 28 66)" />
+      </g>
+      <g class="hero__bloom-petals">
+        <circle cx="30" cy="14" r="5" />
+        <circle cx="20" cy="10" r="4" />
+        <circle cx="12" cy="18" r="3.5" />
+      </g>
+    </svg>
   </header>
 
   <main>
-    <section id="countdown" class="countdown" aria-labelledby="countdown-heading">
+    <section id="countdown" class="countdown" aria-labelledby="countdown-heading" data-reveal>
       <h2 id="countdown-heading" class="section-heading">Counting Down to Forever</h2>
-      <div class="countdown__grid" id="countdown-grid">
-        <div class="countdown__unit">
-          <span class="countdown__value" data-unit="days">00</span>
-          <span class="countdown__label">Days</span>
-        </div>
-        <div class="countdown__unit">
-          <span class="countdown__value" data-unit="hours">00</span>
-          <span class="countdown__label">Hours</span>
-        </div>
-        <div class="countdown__unit">
-          <span class="countdown__value" data-unit="minutes">00</span>
-          <span class="countdown__label">Minutes</span>
-        </div>
-        <div class="countdown__unit">
-          <span class="countdown__value" data-unit="seconds">00</span>
-          <span class="countdown__label">Seconds</span>
+      <div class="countdown__card">
+        <div class="countdown__grid" id="countdown-grid">
+          <div class="countdown__unit">
+            <span class="countdown__value" data-unit="days">00</span>
+            <span class="countdown__label">Days</span>
+          </div>
+          <div class="countdown__unit">
+            <span class="countdown__value" data-unit="hours">00</span>
+            <span class="countdown__label">Hours</span>
+          </div>
+          <div class="countdown__unit">
+            <span class="countdown__value" data-unit="minutes">00</span>
+            <span class="countdown__label">Minutes</span>
+          </div>
+          <div class="countdown__unit">
+            <span class="countdown__value" data-unit="seconds">00</span>
+            <span class="countdown__label">Seconds</span>
+          </div>
         </div>
       </div>
       <p class="countdown__message" id="countdown-message" hidden></p>
     </section>
 
-    <section id="event-details" class="event-details" aria-labelledby="event-details-heading">
+    <section id="event-details" class="event-details" aria-labelledby="event-details-heading" data-reveal>
       <h2 id="event-details-heading" class="section-heading">When &amp; Where</h2>
       <dl class="detail-list">
         <div class="detail-list__row">
@@ -88,11 +125,17 @@
         target="_blank"
         rel="noopener noreferrer"
       >
+        <svg class="button__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path
+            d="M12 2C7.58 2 4 5.58 4 10c0 5.25 6.72 11.24 7.01 11.49a1.5 1.5 0 0 0 1.98 0C13.28 21.24 20 15.25 20 10c0-4.42-3.58-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+            fill="currentColor"
+          />
+        </svg>
         Get Directions
       </a>
     </section>
 
-    <section id="attire" class="attire" aria-labelledby="attire-heading">
+    <section id="attire" class="attire" aria-labelledby="attire-heading" data-reveal>
       <h2 id="attire-heading" class="section-heading">Motif &amp; Attire</h2>
       <div class="swatches">
         <div class="swatch swatch--blue">
@@ -124,12 +167,12 @@
       </dl>
     </section>
 
-    <section id="entourage" class="entourage" aria-labelledby="entourage-heading">
+    <section id="entourage" class="entourage" aria-labelledby="entourage-heading" data-reveal>
       <h2 id="entourage-heading" class="section-heading">Our Wedding Party</h2>
       <div class="entourage__groups" id="entourage-groups"></div>
     </section>
 
-    <section id="share" class="share" aria-labelledby="share-heading">
+    <section id="share" class="share" aria-labelledby="share-heading" data-reveal>
       <h2 id="share-heading" class="section-heading">Share the Celebration</h2>
       <p class="share__intro">Scan or share this link so everyone can find their way back here.</p>
       <div class="share__qr-wrap">
@@ -147,7 +190,8 @@
   </main>
 
   <footer class="site-footer">
-    <p>With love, Adriel &amp; Josephine</p>
+    <div class="site-footer__ornament" aria-hidden="true"></div>
+    <p class="site-footer__signature">With love, Adriel &amp; Josephine</p>
   </footer>
 
   <script src="scripts/qrcode.js"></script>

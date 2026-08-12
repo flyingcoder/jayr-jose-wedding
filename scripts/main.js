@@ -1,5 +1,8 @@
 import { initCountdown } from './countdown.js';
 import { entourageGroups } from './entourage-data.js';
+import { initReveal } from './reveal.js';
+
+const SPONSORS_GROUP_TITLE = 'Principal Sponsors';
 
 // Placeholder until the site is deployed and the final Netlify domain is known (task 10.2).
 const CANONICAL_URL = 'https://jayr-jose-wedding.netlify.app/';
@@ -7,7 +10,8 @@ const CANONICAL_URL = 'https://jayr-jose-wedding.netlify.app/';
 function renderEntourage(containerEl, groups) {
   for (const group of groups) {
     const details = document.createElement('details');
-    details.className = 'entourage-group';
+    details.className =
+      group.title === SPONSORS_GROUP_TITLE ? 'entourage-group entourage-group--sponsors' : 'entourage-group';
 
     const summary = document.createElement('summary');
     summary.className = 'entourage-group__summary';
@@ -77,4 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('share-url-link'),
     CANONICAL_URL
   );
+
+  initReveal();
 });
