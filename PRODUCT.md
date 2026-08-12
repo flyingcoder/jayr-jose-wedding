@@ -29,7 +29,7 @@ Guests view this primarily on their phones — scanning a QR code from a printed
 - Static site: plain HTML/CSS/JS, no build step, no framework, deployed to Netlify.
 - No RSVP collection, no backend, no guest data storage, no multi-page routing, no embedded map iframe (Google Maps link-out instead).
 - All factual content (couple names, date, venue, motif colors, entourage/sponsor names and roles) is transcribed from three source images (`1.jpeg`, `2.jpeg`, `3.jpeg`) at the project root — nothing is invented.
-- Canonical share URL is a single constant in `scripts/main.js`, updated once the Netlify domain is finalized.
+- Canonical share URL is a single constant in `scripts/main.js` (`https://adriel-ii-josephine.netlify.app/`), pointing to the finalized Netlify domain.
 
 ## Brand Commitments
 
@@ -41,7 +41,9 @@ Guests view this primarily on their phones — scanning a QR code from a printed
 
 ## Evidence on Hand
 
-`1.jpeg`, `2.jpeg`, `3.jpeg` at the project root — the printed invitation suite (couple/date/venue card, entourage list, principal sponsors list). All entourage and sponsor names, roles, and honorifics are transcribed from these into `scripts/entourage-data.js`. No other photography, testimonials, or assets exist; none should be fabricated.
+`1.jpeg`, `2.jpeg`, `3.jpeg` at the project root — the printed invitation suite (couple/date/venue card, entourage list, principal sponsors list). All entourage and sponsor names, roles, and honorifics are transcribed from these into `scripts/entourage-data.js`.
+
+`countdown-bg.jpeg` (with a `countdown-bg.webp` build alongside it) — a real candid engagement photo of the couple, used as the Countdown section's top-band background. No other photography, testimonials, or assets exist beyond these; none should be fabricated.
 
 ## Product Principles
 

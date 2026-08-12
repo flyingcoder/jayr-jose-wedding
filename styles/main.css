@@ -252,13 +252,34 @@ main > section + section::before {
 /* Countdown */
 
 .countdown {
+  --countdown-band: clamp(13rem, 32vw, 21rem);
+  isolation: isolate;
+  padding-block-start: calc(var(--countdown-band) * 0.78);
   text-align: center;
+}
+
+.countdown::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  height: var(--countdown-band);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+  background-image:
+    linear-gradient(to bottom, transparent 30%, var(--color-cream) 88%),
+    url('../countdown-bg.jpeg');
+  background-image:
+    linear-gradient(to bottom, transparent 30%, var(--color-cream) 88%),
+    image-set(
+      url('../countdown-bg.webp') type('image/webp'),
+      url('../countdown-bg.jpeg') type('image/jpeg')
+    );
 }
 
 .countdown__card {
   position: relative;
-  max-width: var(--content-width);
-  margin-inline: auto;
   padding: var(--space-lg) var(--space-sm);
   background: var(--color-surface);
   border: 1px solid var(--color-border);
