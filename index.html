@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adriel &amp; Josephine — August 30, 2026</title>
+  <meta name="description" content="Join Adriel II J. Gran and Josephine C. Bernales as they exchange vows on Sunday, August 30, 2026 at Paseo de Santiago, Iligan City." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    rel="preload"
+    as="style"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Work+Sans:wght@400;500;600&family=Mrs+Saint+Delafield&display=swap"
+    onload="this.onload=null;this.rel='stylesheet'"
+  />
+  <noscript>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Work+Sans:wght@400;500;600&family=Mrs+Saint+Delafield&display=swap"
+    />
+  </noscript>
+
+  <link rel="stylesheet" href="styles/tokens.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__inner">
+      <p class="hero__eyebrow">You're Invited</p>
+      <h1 class="hero__names">
+        <span class="hero__name">Adriel&nbsp;II&nbsp;J.&nbsp;Gran</span>
+        <span class="hero__and">and</span>
+        <span class="hero__name">Josephine&nbsp;C.&nbsp;Bernales</span>
+      </h1>
+      <p class="hero__date">Sunday, August 30, 2026</p>
+      <p class="hero__venue">Paseo de Santiago, Iligan City</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="countdown" class="countdown" aria-labelledby="countdown-heading">
+      <h2 id="countdown-heading" class="section-heading">Counting Down to Forever</h2>
+      <div class="countdown__grid" id="countdown-grid">
+        <div class="countdown__unit">
+          <span class="countdown__value" data-unit="days">00</span>
+          <span class="countdown__label">Days</span>
+        </div>
+        <div class="countdown__unit">
+          <span class="countdown__value" data-unit="hours">00</span>
+          <span class="countdown__label">Hours</span>
+        </div>
+        <div class="countdown__unit">
+          <span class="countdown__value" data-unit="minutes">00</span>
+          <span class="countdown__label">Minutes</span>
+        </div>
+        <div class="countdown__unit">
+          <span class="countdown__value" data-unit="seconds">00</span>
+          <span class="countdown__label">Seconds</span>
+        </div>
+      </div>
+      <p class="countdown__message" id="countdown-message" hidden></p>
+    </section>
+
+    <section id="event-details" class="event-details" aria-labelledby="event-details-heading">
+      <h2 id="event-details-heading" class="section-heading">When &amp; Where</h2>
+      <dl class="detail-list">
+        <div class="detail-list__row">
+          <dt>Date</dt>
+          <dd>Sunday, August 30, 2026</dd>
+        </div>
+        <div class="detail-list__row">
+          <dt>Time</dt>
+          <dd>4:00 PM</dd>
+        </div>
+        <div class="detail-list__row">
+          <dt>Venue</dt>
+          <dd>Paseo de Santiago</dd>
+        </div>
+        <div class="detail-list__row">
+          <dt>Address</dt>
+          <dd>Brgy. Santiago, Iligan City</dd>
+        </div>
+      </dl>
+      <a
+        class="button button--primary"
+        href="https://maps.app.goo.gl/QripTx3BikKoCcrz7"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Get Directions
+      </a>
+    </section>
+
+    <section id="attire" class="attire" aria-labelledby="attire-heading">
+      <h2 id="attire-heading" class="section-heading">Motif &amp; Attire</h2>
+      <div class="swatches">
+        <div class="swatch swatch--blue">
+          <span class="swatch__color" aria-hidden="true"></span>
+          <span class="swatch__label">Light Blue</span>
+        </div>
+        <div class="swatch swatch--sage">
+          <span class="swatch__color" aria-hidden="true"></span>
+          <span class="swatch__label">Light Green</span>
+        </div>
+      </div>
+      <dl class="detail-list">
+        <div class="detail-list__row">
+          <dt>Principal Sponsors — Ninong</dt>
+          <dd>Traditional barong and black slacks</dd>
+        </div>
+        <div class="detail-list__row">
+          <dt>Principal Sponsors — Ninang</dt>
+          <dd>Long dress</dd>
+        </div>
+        <div class="detail-list__row">
+          <dt>Gentlemen</dt>
+          <dd>Polo or long sleeves</dd>
+        </div>
+        <div class="detail-list__row">
+          <dt>Ladies</dt>
+          <dd>Long dress, maxi, or mini dress</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section id="entourage" class="entourage" aria-labelledby="entourage-heading">
+      <h2 id="entourage-heading" class="section-heading">Our Wedding Party</h2>
+      <div class="entourage__groups" id="entourage-groups"></div>
+    </section>
+
+    <section id="share" class="share" aria-labelledby="share-heading">
+      <h2 id="share-heading" class="section-heading">Share the Celebration</h2>
+      <p class="share__intro">Scan or share this link so everyone can find their way back here.</p>
+      <div class="share__qr-wrap">
+        <canvas
+          id="qr-canvas"
+          class="share__qr"
+          width="200"
+          height="200"
+          role="img"
+          aria-label="QR code linking to this wedding website"
+        ></canvas>
+      </div>
+      <p class="share__url"><a id="share-url-link" href="#"></a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>With love, Adriel &amp; Josephine</p>
+  </footer>
+
+  <script src="scripts/qrcode.js"></script>
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
