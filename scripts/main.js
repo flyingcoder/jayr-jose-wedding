@@ -4,8 +4,7 @@ import { initReveal } from './reveal.js';
 
 const SPONSORS_GROUP_TITLE = 'Principal Sponsors';
 
-// Placeholder until the site is deployed and the final Netlify domain is known (task 10.2).
-const CANONICAL_URL = 'https://jayr-jose-wedding.netlify.app/';
+const CANONICAL_URL = 'https://adriel-ii-josephine.netlify.app/';
 
 function renderEntourage(containerEl, groups) {
   for (const group of groups) {
