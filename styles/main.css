@@ -695,6 +695,41 @@ main > section + section::before {
   color: var(--color-ink-soft);
 }
 
+.site-footer__sponsor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: var(--space-sm);
+  font-size: var(--text-xs);
+  letter-spacing: 0.02em;
+  color: var(--color-ink-soft);
+  opacity: 0.7;
+}
+
+.site-footer__sponsor-link {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+  opacity: 0.85;
+  transition: opacity var(--duration-fast) var(--ease-out-expo);
+}
+
+.site-footer__sponsor-link:hover,
+.site-footer__sponsor-link:focus-visible {
+  opacity: 1;
+}
+
+.site-footer__sponsor-link:focus-visible {
+  outline: 2px solid var(--color-sage-deep);
+  outline-offset: 3px;
+}
+
+.site-footer__sponsor-logo {
+  height: 1.1rem;
+  width: auto;
+}
+
 /* Reduced motion */
 
 @media (prefers-reduced-motion: reduce) {
