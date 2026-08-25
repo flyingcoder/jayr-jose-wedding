@@ -697,6 +697,7 @@ main > section + section::before {
 
 .site-footer__sponsor {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 0.4rem;
